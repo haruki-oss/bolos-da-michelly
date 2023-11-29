@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte o seu Bolo</title>
+    <link rel="stylesheet" href="./Monte/monte.css">
+</head>
+<body>
+    <header>
+      <img src="./Início/imagens/logo1michelly.png" href="" id="logo"></a> 
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="./index.html">Início</a>
+            <a href="./produtos.html">Produtos</a>
+            <a href="./sobre.html">Sobre</a>
+            <a href="./contato.html">Contato</a>
+            <a href="./avaliacao.html">Avaliações</a>
+        </nav>
+        <button id="openMenu">&#9776;</button>
+</header>
+<main>
+    <h1>Monte o seu Bolo!</h1>
+  
+    <form id="calculatorForm">
+      <label for="tamanho">Tamanho do bolo:</label>
+      <select id="tamanho">
+        <option value="pequeno">Pequeno</option>
+        <option value="medio">Médio</option>
+        <option value="grande">Grande</option>
+      </select>
+  
+      <label for="massa">Tipo de massa:</label>
+      <select id="massa">
+        <option value="baunilha">Baunilha</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="cenoura">Cenoura</option>
+        <option value="cenoura">Morango</option>
+      </select>
+  
+      <label for="recheio">Tipo de recheio:</label>
+      <select id="recheio">
+        <option value="brigadeiro">Brigadeiro</option>
+        <option value="morango">Morango</option>
+        <option value="doce-leite">Doce de Leite</option>
+        <option value="brigadeiro-de-ninho">Brigadeiro de Ninho</option>
+      </select>
+  
+      <input type="submit" value="Finalizar">
+    </form>
+  
+    <div id="resultado"></div>
+    <button class="comprarbtn" onclick="location.href='./dados.html'">Comprar!</button>
+
+      
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
+<script src="./Monte/monte.js"></script>

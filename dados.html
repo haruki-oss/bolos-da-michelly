@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizando o Pedido</title>
+    <link rel="stylesheet" href="./dados/dados.css">
+</head>
+<body>
+    <header>
+        <img src="./Início/imagens/logo1michelly.png" href="" id="logo" onclick="location.href='./inicio.html'"></a> 
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="./index.html">Início</a>
+            <a href="./produtos.html">Produtos</a>
+            <a href="./sobre.html">Sobre</a>
+            <a href="./contato.html">Contato</a>
+            <a href="./avaliacao.html">Avaliações</a>
+        </nav>
+        <button id="openMenu">&#9776;</button>
+</header>
+<main>
+    <img src="./imagens/fina1.png" width="30%" height="30%" object-fit="contain" class="imgmain">
+    <br>
+    <div class="buy-container"> 
+        <form id="paymentForm">
+            <div class="input-box">
+                <input placeholder="Nome completo:" type="text" id="fullname" name="fullname" required><br>
+            </div>
+            <div class="input-box">
+                <input placeholder="Email:" type="text" id="email" name="email" required><br>
+            </div>
+            <div class="input-box">
+                <input placeholder="Endereço:" type="text" id="address" name="address" required><br>
+            </div>
+            <div class="input-box">
+                <input placeholder="CPF:" type="text" id="cpf" name="cpf" required><br>
+            </div>
+            <div class="input-box">
+                <input placeholder="Número do cartão:" type="text" id="cardNumber" name="cardNumber" required><br>
+            </div>
+            <div class="input-box">
+                <input placeholder="Data de validade:" type="text" id="expiryDate" name="expiryDate" required><br>
+            </div>
+            <div class="input-box">
+                <input placeholder="CVV:" type="text" id="cvv" name="cvv" required><br>
+            </div>
+            <button class="submitbtn" onclick="location.href='./thanksp.html'">Finalizar a compra</button>
+            <br>
+        </form>
+    </div>
+    <br>
+</main>
+<footer>
+    <img src="./Início/imagens/logo1michelly.png" href="" id="logo"></a> 
+    <nav id="menu">
+        <button id="closeMenu">X</button>
+        <a href="./inicio.html">Início</a><hr>
+        <a href="./produtos.html">Produtos</a><hr>
+        <a href="./sobre.html">Sobre</a><hr>
+        <a href="./contato.html">Contato</a><hr>
+        <a href="./avaliacao.html">Avaliações</a>
+    </nav>
+</footer>
+            <script>
+                document.getElementById('submitLink').addEventListener('click', function(e) {
+                    var form = document.getElementById('paymentForm');
+                    if (!form.checkValidity()) {
+                        e.preventDefault();
+                        alert('Por favor, preencha todos os campos antes de finalizar a compra.');
+                    } else {
+                        this.href = "thx.html";
+                    }
+                });
+            </script>
+</body>
+</html>
+<script src="./Sobre/sobre.js"></script>
