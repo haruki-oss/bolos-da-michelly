@@ -1,0 +1,165 @@
+/*#F4EAE4
+#d4d1ce
+#A22428
+rgb(241, 225, 215)*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;     /*quebra de linha entre os elementos quando não couberem na largura da tela*/
+    margin: 0;
+    flex: 1 1 100vw ;
+}
+header, nav, main, footer{
+    display: flex;
+    padding: 0 4%;
+    
+}
+p {
+    text-align: center;
+    font-size: 15pt;
+  }
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 24pt;
+    color: #A22428;
+}
+h2{
+    font-size: 14pt;
+    color: rgb(78, 30, 12);
+}
+
+
+header{
+    flex: 1 1 100vw ;
+    height: 120px;
+    background-color: #A22428;
+    color: white; 
+}
+    #openMenu, #closeMenu{
+        border: none;
+        background: none;
+        font-size: 30px;
+        font-weight: bold;  /*espessura*/
+        padding: 0px 5px 0px 5px;
+        cursor: pointer;
+        display: none;
+
+    }
+    #logo{
+        display: flex;
+        flex: 0 1 200px;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        font-size: 30px;
+    }
+    nav{
+        flex: 1 1 200px ;
+        align-self: center;
+        justify-content: flex-end;  
+    }
+        nav a{
+            margin: 0 3%;
+            font-size: 15pt;
+        }
+    #carrinho{
+        display: flex;
+        flex: 0 1 50px;
+        height: 50px;
+        justify-content: center;
+        align-self: center;
+        margin-left: auto;
+        background: none;
+    }  
+    #carrinhoimg{
+        width: 100%;
+    }
+    #openMenu{
+        margin-left: 2%;
+        color: white;
+    }
+   
+    
+main{
+    flex: 1 1 100vw ;
+    height: calc(100vh - 200px) ;
+    flex-direction: column;
+    background-color: #F4EAE4;
+    justify-content: center;
+    align-items: center;
+    color: rgb(78, 30, 12);
+}
+    #textp{
+        margin: 2vh 0 1vh 0;
+    }
+    samp{
+        font-size: 10pt;
+        color: rgb(78, 30, 12);
+    }
+    .agradecimento-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        flex: 0 1 500px;
+        background:none;
+        margin: 10%;
+
+    }
+        .returnbtn{
+            text-align: center;
+            width: 35%;
+            height: 40px;
+            margin: 0 32%;
+            border-radius: 40px;
+            border: 2px solid  #A22428;
+            cursor: pointer;
+            color: rgb(78, 30, 12);
+            background: none;
+        }
+
+            
+footer{
+    flex: 1 1 100vw ;
+    height: 200px;
+    background-color: #A22428;
+}
+
+@media only screen and (max-width:768px){
+    #openMenu, #closeMenu{
+        display: block;
+    }
+    
+    #closeMenu{
+        color: white;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+    nav a {
+        margin: 3%;
+    }
+    
+    nav{
+        position: fixed;
+        top: 5px;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #A22428;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        transition: 0.3s;
+    }
+}

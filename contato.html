@@ -4,86 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="./contato/contato.css">
+    <link rel="stylesheet" href="./contato.css">
+</head>
 <body>
     <header>
-        <img src="./Início/imagens/logo1michelly.png" href="" id="logo" onclick="location.href='./index.html'"></a> 
+        <a href="" id="logo">LOGO</a>
         <nav id="menu">
             <button id="closeMenu">X</button>
-            <a href="./index.html">Início</a>
-            <a href="./produtos.html">Produtos</a>
-            <a href="./sobre.html">Sobre</a>
-            <a href="./contato.html">Contato</a>
-            <a href="./avaliacao.html">Avaliações</a>
+            <a href="">Início</a>
+            <a href="">Produtos</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
         </nav>
+        <a href="" id="carrinho"><img src="./imagens/carrinhoBorder - Atalho (2).lnk" alt="Carrinho" id="carrinhoimg"></a>
         <button id="openMenu">&#9776;</button>
-    </header>
-    <main>
-        <div class="contato-box">
-            <br>
-            <h1>Contato</h1>
-            <samp>__________</samp>
-            <p id="textp">Entre em contato conosco e receba mais informações</p>
-            <samp>__________</samp>
-            <form action="https://formsubmit.co/michelly.bolosdecakes.contato@gmail.com" method="POST">
-                <div class="input-box">
-                    <input placeholder="Nome:" type="text" name="Nome" required><br>
-                </div>
-                <div class="input-box">
-                    <input placeholder="E-mail:" type="text" name="E-mail" id="E-mail" required><br>
-                </div>
-                <div class="input-box-msg">
-                    <label for="corpo"></label>
-                    <textarea name="E-mail" id="corpo" cols="30" rows="10" placeholder="Mensagem:" required></textarea><br>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+</header>
+<main>
+    <h1>Contato</h1>
+    <p id="textp">Entre em contato conosco e receba mais informações</p>
+    <samp>__________</samp>
+    <ul id="contatoul">
+        <li>
+            <div class="imagebox"><img class="image" src="./imagens/lojas.png" alt="Envelope"></div>
+            <div class="contentbox">
+                <h2>Endereço</h2>
+                <br>
+                <p class="content">Rua Chuva de Prata, n°1353 <br>
+                    Rio Comprido - RJ </p>   
+            </div>
+        </li>
+        <li>
+            <div class="imagebox"><img class="image" src="./imagens/e-mail.png" alt="Envelope"></div>
+            <div class="contentbox">
+                <h2>E-mail</h2><br>
+                <p class="content">sac@Michelly.com.br</p>
+            </div>
+        </li> 
+        <li>
+            <div class="imagebox"><img class="image" src="./imagens/telefone.png" alt="Telefone"></div>
+            <div class="contentbox">
+                <h2>Telefone</h2><br>
+                <p class="content">+55 11 5426-3767 <br>
+                    +55 11 5832-7751
+                </p>
+            </div>
+        </li>          
+    </ul> 
+</main>
 
-                </div>
-                <button type="submit" class="submitbtn">Enviar</button> 
-            </form>
-        </div>
-    </main>
-    <aside>
-            <ul id="produtosul">
-                <li class="produtoli"><div class="container">
-                    <br>
-                    <div class="imagebox"><img class="image" src="./contato/imagens/lojas.png" alt="Loja"></div>
-                    <br>
-                    <div class="contentbox">
-                        <h2>Endereço</h2> <br>
-                        <p class="content">Rua Chuva de Prata, n°342 <br>
-                        Rio Comprido - RJ </p>   
-                    </div>
-                </div></li>
-                <li class="produtoli"><div class="container"><br>
-                    <div class="imagebox"><img class="image" src="./contato/imagens/e-mail.png" alt="Envelope"></div>
-                     <div class="contentbox"><br>
-                        <h2>E-mail</h2><br>
-                         <p class="content">michelly.bolosdecakes <br> 
-                            .contato@gmail.com</p>
-                    </div>
-                </div></li>
-                <li class="produtoli"><div class="container"><br>
-                    <div class="imagebox"><img class="image" src="./contato/imagens/telefone.png" alt="Telefone"></div>
-                    <div class="contentbox"><br>
-                        <h2>Telefone</h2><br>
-                        <p class="content">+55 21 5426-3767 <br>
-                            +55 21 5832-7751</p>
-                    </div>
-                </div></li>
-            </ul>
-    </aside>
-    <footer>
-        <img src="./Início/imagens/logo1michelly.png" href="" id="logo"></a> 
-        <nav id="menu">
-            <button id="closeMenu">X</button>
-            <a href="./index.html">Início</a><hr>
-            <a href="./produtos.html">Produtos</a><hr>
-            <a href="./sobre.html">Sobre</a><hr>
-            <a href="./contato.html">Contato</a><hr>
-            <a href="./avaliacao.html">Avaliações</a>
-        </nav>
-    </footer>
 </body>
 </html>
-<script src="./contato/contato.js"></script>
+<script src="./contato.js"></script>
